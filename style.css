@@ -1,0 +1,1001 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
+
+strong {
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+header {
+    background: #050505;
+    color: #ffffff;
+    padding: 70px 7% 55px;
+    text-align: center;
+    border-bottom: 1px solid #222222;
+}
+
+
+/* pequeno texto acima do título */
+
+.disciplina {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #999999;
+    margin-bottom: 18px;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+.topo h1 {
+    font-size: clamp(42px, 8vw, 72px);
+    font-weight: 800;
+    letter-spacing: 7px;
+    line-height: 1;
+}
+
+
+/* linha abaixo do título */
+
+.linha {
+    width: 80px;
+    height: 3px;
+    background: #ffffff;
+    margin: 22px auto 18px;
+}
+
+
+/* subtítulo */
+
+.topo > p {
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   INFORMAÇÕES DO TRABALHO
+===================================================== */
+
+.informacoes {
+    max-width: 1000px;
+    margin: 55px auto 0;
+
+    display: grid;
+    grid-template-columns: 1.8fr 0.7fr 0.9fr;
+
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+
+.informacao {
+    padding: 22px 25px;
+    text-align: left;
+}
+
+
+.informacao + .informacao {
+    border-left: 1px solid #333333;
+}
+
+
+.rotulo {
+    display: block;
+
+    color: #777777;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+
+.informacao p {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   CONTEÚDO PRINCIPAL
+===================================================== */
+
+main {
+    width: 100%;
+}
+
+
+/* =====================================================
+   INTRODUÇÃO
+===================================================== */
+
+.introducao {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    padding: 100px 30px;
+
+    display: grid;
+
+    grid-template-columns: 80px 0.8fr 1.2fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+.numero {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #111111;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #111111;
+}
+
+
+.titulo-secao > span,
+.categoria {
+    display: block;
+
+    color: #777777;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.titulo-secao h2 {
+    font-size: 38px;
+
+    line-height: 1.1;
+
+    margin-top: 8px;
+
+    letter-spacing: -1px;
+}
+
+
+.texto-introducao p {
+    color: #444444;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+/* caixa de destaque */
+
+.frase-destaque {
+    margin-top: 30px;
+
+    padding: 22px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    border-left: 4px solid #ffffff;
+}
+
+
+.frase-destaque span {
+    display: block;
+
+    color: #888888;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+
+.frase-destaque p {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   SEÇÕES DOS ASSUNTOS
+===================================================== */
+
+.assunto {
+    padding: 100px 7%;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+
+.fundo-cinza {
+    background: #f4f4f4;
+}
+
+
+.cabecalho-assunto {
+    max-width: 1050px;
+
+    margin: 0 auto 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.cabecalho-assunto h2 {
+    font-size: 38px;
+
+    line-height: 1.1;
+
+    margin-top: 6px;
+
+    letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.grade-conteudo {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 25px;
+}
+
+
+.cartao {
+    border: 1px solid #d8d8d8;
+
+    border-radius: 4px;
+
+    padding: 35px;
+
+    background: #ffffff;
+}
+
+
+/* cartão de texto */
+
+.cartao.texto h3 {
+    font-size: 23px;
+
+    margin-bottom: 18px;
+}
+
+
+.cartao.texto p {
+    color: #4f4f4f;
+
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.cartao.texto h4 {
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-top: 5px;
+
+    margin-bottom: 5px;
+}
+
+
+/* listas */
+
+.cartao ul {
+    list-style: none;
+
+    margin-top: 5px;
+}
+
+
+.cartao li {
+    padding: 5px 0;
+
+    color: #444444;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FÓRMULAS
+===================================================== */
+
+.formula {
+    display: inline-block;
+
+    margin: 25px 0;
+
+    padding: 17px 30px;
+
+    background: #050505;
+
+    color: #ffffff;
+
+    border-radius: 3px;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+.formula span {
+    color: #ffffff;
+}
+
+
+.unidade {
+    margin-top: 20px !important;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #dddddd;
+
+    font-size: 13px !important;
+
+    color: #777777 !important;
+}
+
+
+/* =====================================================
+   CARTÃO DE EXEMPLO
+===================================================== */
+
+.cartao.exemplo {
+    background: #050505;
+
+    color: #ffffff;
+
+    border-color: #050505;
+}
+
+
+.mini-numero {
+    display: block;
+
+    color: #777777;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.cartao.exemplo h3 {
+    font-size: 21px;
+
+    line-height: 1.3;
+
+    margin-bottom: 18px;
+}
+
+
+.cartao.exemplo p {
+    color: #bdbdbd;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+.cartao.exemplo strong {
+    color: #ffffff;
+}
+
+
+/* cálculo */
+
+.calculo {
+    padding: 15px;
+
+    margin: 20px 0;
+
+    background: #181818;
+
+    border: 1px solid #303030;
+
+    color: #eeeeee;
+
+    font-family: monospace;
+
+    font-size: 17px;
+}
+
+
+/* resultado */
+
+.resultado {
+    padding: 18px;
+
+    margin: 20px 0;
+
+    background: #ffffff;
+
+    color: #050505;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    border-radius: 2px;
+}
+
+
+/* =====================================================
+   CURIOSIDADES
+===================================================== */
+
+.curiosidade {
+    max-width: 1050px;
+
+    margin: 25px auto 0;
+
+    padding: 20px 25px;
+
+    border-left: 3px solid #111111;
+
+    background: #f5f5f5;
+}
+
+
+.curiosidade strong {
+    display: block;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 4px;
+}
+
+
+.curiosidade p {
+    color: #555555;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   PRESSÃO HIDROSTÁTICA
+===================================================== */
+
+.profundidade {
+    margin-top: 25px;
+
+    border: 1px solid #333333;
+
+    overflow: hidden;
+}
+
+
+.nivel {
+    padding: 18px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.nivel-1 {
+    background: #eeeeee;
+
+    color: #555555;
+}
+
+
+.nivel-2 {
+    background: #bbbbbb;
+
+    color: #222222;
+}
+
+
+.nivel-3 {
+    background: #222222;
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   APLICAÇÕES DO PRINCÍPIO DE PASCAL
+===================================================== */
+
+.aplicacoes {
+    margin: 20px 0 !important;
+}
+
+
+.aplicacoes li {
+    padding: 12px 0 !important;
+
+    border-bottom: 1px solid #2c2c2c;
+
+    color: #dddddd !important;
+
+    font-size: 14px !important;
+}
+
+
+.aplicacoes li:last-child {
+    border-bottom: none;
+}
+
+
+/* =====================================================
+   CONCLUSÃO
+===================================================== */
+
+.conclusao {
+    background: #050505;
+
+    color: #ffffff;
+
+    padding: 100px 7%;
+
+    text-align: center;
+}
+
+
+.conclusao > * {
+    max-width: 750px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.conclusao h2 {
+    font-size: 42px;
+
+    line-height: 1.1;
+
+    margin: 15px auto 25px;
+
+    letter-spacing: -1px;
+}
+
+
+.conclusao > p {
+    color: #aaaaaa;
+
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.fim {
+    margin-top: 50px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #333333;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+.fim span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #777777;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: normal;
+}
+
+
+/* =====================================================
+   ANIMAÇÕES
+===================================================== */
+
+.cartao {
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+
+.cartao:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+.topo h1 {
+    animation: aparecer 0.8s ease;
+}
+
+
+.topo > p {
+    animation: aparecer 0.8s ease 0.15s both;
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 50px 6% 40px;
+    }
+
+
+    .topo h1 {
+        font-size: 42px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .informacoes {
+        grid-template-columns: 1fr;
+
+        margin-top: 40px;
+    }
+
+
+    .informacao {
+        text-align: center;
+
+        padding: 18px;
+    }
+
+
+    .informacao + .informacao {
+        border-left: none;
+
+        border-top: 1px solid #333333;
+    }
+
+
+    .introducao {
+        display: block;
+
+        padding: 75px 7%;
+    }
+
+
+    .introducao .numero {
+        margin-bottom: 25px;
+    }
+
+
+    .titulo-secao h2 {
+        font-size: 34px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .assunto {
+        padding: 75px 7%;
+    }
+
+
+    .cabecalho-assunto {
+        align-items: flex-start;
+
+        margin-bottom: 35px;
+    }
+
+
+    .cabecalho-assunto h2 {
+        font-size: 31px;
+    }
+
+
+    .grade-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+
+    .cartao {
+        padding: 25px;
+    }
+
+
+    .formula {
+        font-size: 24px;
+
+        padding: 15px 22px;
+    }
+
+
+    .conclusao {
+        padding: 75px 7%;
+    }
+
+
+    .conclusao h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULARES PEQUENOS
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .topo h1 {
+        font-size: 34px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .disciplina {
+        font-size: 9px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .topo > p {
+        font-size: 13px;
+    }
+
+
+    .informacao p {
+        font-size: 12px;
+    }
+
+
+    .cabecalho-assunto {
+        gap: 13px;
+    }
+
+
+    .cabecalho-assunto .numero {
+        width: 40px;
+        height: 40px;
+
+        min-width: 40px;
+
+        font-size: 11px;
+    }
+
+
+    .cabecalho-assunto h2 {
+        font-size: 27px;
+    }
+
+
+    .categoria {
+        font-size: 9px;
+    }
+
+
+    .cartao.texto h3 {
+        font-size: 20px;
+    }
+
+
+    .formula {
+        font-size: 21px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+} /* =========================================
+   ANIMAÇÃO DAS SEÇÕES
+========================================= */
+
+.introducao,
+.assunto,
+.conclusao {
+    opacity: 0;
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+.introducao.aparecer,
+.assunto.aparecer,
+.conclusao.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   BOTÃO VOLTAR AO TOPO
+========================================= */
+
+.botao-topo {
+
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    padding: 0;
+
+    border: 1px solid #ffffff;
+
+    border-radius: 50%;
+
+    background: #050505;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: 0.3s;
+
+    z-index: 9999;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+.botao-topo.visivel {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+.botao-topo:hover {
+
+    background: #ffffff;
+
+    color: #050505;
+
+}
+
+
+/* =========================================
+   CARTÃO ATIVO
+========================================= */
+
+.cartao-ativo {
+
+    transform: translateY(-5px) !important;
+
+}
